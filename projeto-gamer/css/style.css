@@ -11,8 +11,69 @@
     box-sizing: border-box;
 }
 
+/* Classes genericas */
+
+body {
+    background-color: #1B1426;
+    color: white;
+}
+
+.layout-grid {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
 h1 {
     font-family: "Titillium web";
 }
 
+
+
 /*Mobile first*/
+
+/* Header */
+
+header {
+    height: 60px;
+    background-color: #1B1426;
+}
+
+/* Header top */
+
+header .header-top {
+    display: none;
+}
+
+/* Header bottom */
+
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-bottom .logo {
+    width: 86px;
+}
+
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 80vw;
+    height: calc(100vh - 60px);
+
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    border: 1px solid white;
+}
+
+header .header-bottom .menu-user {
+    display: none;
+}
+
+header .header-bottom__format {
+    height: 60px;
+}
