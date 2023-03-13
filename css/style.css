@@ -1,0 +1,118 @@
+/* inport fonts */
+
+@font-face {
+    font-family: Titillium web;
+    src: url(../assets/fonts/titilium/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Classes genericas */
+
+body {
+    color: white;
+}
+
+.layout-grid {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+h1 {
+    font-family: "Titillium web";
+}
+
+
+
+
+
+/*Mobile first*/
+
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 60px;
+    background-color: #1B1426;
+}
+
+/* Header top */
+
+header .header-top {
+    display: none;
+}
+
+/* Header bottom */
+
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-bottom .logo {
+    width: 86px;
+}
+
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: -80vw;
+    width: 80vw;
+    height: calc(100vh - 60px);
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to left bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    justify-content: space-between;
+}
+
+header .header-bottom .redes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* somente links "filhos diretos" */
+
+header .header-bottom nav > a {
+    color: white;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    border-bottom: solid 2px #F9AA01;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px 0;
+}
+
+header .header-bottom nav > a:last-of-type {
+    border: none;
+}
+
+header .header-bottom__format {
+    height: 60px;
+}
+
+/* menu lateral direito - icones */
+
+header .header-bottom .menu-user {
+    display: none;
+}
+
