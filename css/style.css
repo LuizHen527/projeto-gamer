@@ -32,7 +32,13 @@ h1 {
     font-family: "Titillium web";
 }
 
+.mostrar-menu {
+    left: 0 !important;
+}
 
+.mostrar-menu-esquerdo {
+    left: 84vw !important;
+}
 
 
 
@@ -81,6 +87,8 @@ header .header-bottom nav {
     background-image: linear-gradient(to left bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
     justify-content: space-between;
+
+    transition: left 0.4s;
 }
 
 header .header-bottom .redes {
@@ -113,6 +121,33 @@ header .header-bottom__format {
 /* menu lateral direito - icones */
 
 header .header-bottom .menu-user {
-    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    top: 60px;
+    left: 100vw;
+    position: fixed;
+    height: 170px;
+    width: 66px;
+    background-image: linear-gradient(to left bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    transition: left 0.4s;
 }
 
+
+/* MAIN */
+
+/* Banner */
+
+
+
+main .banner {
+    height: 606px;
+    width: 100%;
+    background-image: url(../assets/images/imagem-banner-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-top: 60px;
+}

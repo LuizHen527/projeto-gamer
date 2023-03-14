@@ -41,49 +41,49 @@
             <div class="layout-grid alinhamento-between-center header-bottom__format">
                 <!-- menu hamburguer-->
 
-                <img onclick="mostraMenu()" id="menu" src="../projeto-gamer/assets/icons/mobile-header-menu-hamburguer.svg" class="menu-hamburguer" alt="menu mobile">
+                <img onclick="mostraMenu()" src="../projeto-gamer/assets/icons/mobile-header-menu-hamburguer.svg" class="menu-hamburguer" alt="menu mobile">
 
 
                 <img src="../projeto-gamer/assets/icons/mobile-header-logotipo-gamer.svg" class="logo" alt="logo gamer">
 
                 <!-- <img class="logo" src="" alt="logo da pagina"> -->
 
-                <nav class="menu">
+                <nav id="menu">
 
-                <a href="">Inicio</a>
-                <a href="">Jogadores</a>
-                <a href="">Equipes</a>
-                <a href="">Noticias</a>
+                    <a href="">Inicio</a>
+                    <a href="">Jogadores</a>
+                    <a href="">Equipes</a>
+                    <a href="">Noticias</a>
 
-                <!-- visivel apenas no mobile-->
+                    <!-- visivel apenas no mobile-->
 
-                <a class="phone">
-                    <img src="./assets/icons/mobile-header-telefone.svg" alt="icone de um telefone">
-                    <span>(11) 0900-1010</span>
-                </a>
+                    <a class="phone">
+                        <img src="./assets/icons/mobile-header-telefone.svg" alt="icone de um telefone">
+                        <span>(11) 0900-1010</span>
+                    </a>
 
-                <a class="email">
+                    <a class="email">
 
-                    <img src="./assets/icons/mobile-header-email.svg" alt="icone de email">
-                    <span>contato@gamer.com.br</span>
+                        <img src="./assets/icons/mobile-header-email.svg" alt="icone de email">
+                        <span>contato@gamer.com.br</span>
 
-                </a>
+                    </a>
 
-                <div class="redes">
+                    <div class="redes">
 
-                    <a href=""><img src="../projeto-gamer/assets/icons/mobile-header-facebook.svg" alt="Icone do facebook da empresa"></a>
-                    <a href=""><img src="../projeto-gamer/assets/icons/mobile-header-linkedin.svg" alt="Icone do Linkedin da empresa"></a>
-                    <a href=""><img src="../projeto-gamer/assets/icons/mobile-header-instagram.svg" alt="Icone do Instagram da empresa"></a>
-                    
-                </div>
+                        <a href=""><img src="../projeto-gamer/assets/icons/mobile-header-facebook.svg" alt="Icone do facebook da empresa"></a>
+                        <a href=""><img src="../projeto-gamer/assets/icons/mobile-header-linkedin.svg" alt="Icone do Linkedin da empresa"></a>
+                        <a href=""><img src="../projeto-gamer/assets/icons/mobile-header-instagram.svg" alt="Icone do Instagram da empresa"></a>
+                        
+                    </div>
 
                 </nav>
 
                 <!-- menu pontinhos -->
 
-                <img class="menu-pontinhos" src="./assets/icons/header-tres-pontinhos.svg" alt="menu 3 pontinhos">
+                <img onclick="mostraPontinhos()" class="menu-pontinhos" src="./assets/icons/header-tres-pontinhos.svg" alt="menu 3 pontinhos">
 
-                <div class="menu-user">
+                <div id="pontinhos" class="menu-user">
 
                 <a href=""><img src="./assets/icons/mobile-header-usuario.svg" alt="Icone de usuario"></a>
                 <a href=""><img src="./assets/icons/mobile-header-sacola.svg" alt="Icone de uma sacola de compras"></a>
@@ -93,11 +93,27 @@
             </div>
         </div>
     </header>
+<main>
+
+    <section class="banner">
+
+        <h1>Ligas Gamers</h1>
+
+        <button class="banner__botao-sobre">Sobre</button>
+
+    </section>
+
+</main>
+    
 
     <script>
 
         function mostraMenu() {
             document.getElementById("menu").classList.toggle("mostrar-menu")
+        }
+
+        function mostraPontinhos() {
+            document.getElementById("pontinhos").classList.toggle("mostrar-menu-esquerdo")
         }
 
     </script>
