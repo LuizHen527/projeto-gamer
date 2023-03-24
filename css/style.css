@@ -20,6 +20,39 @@
     src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
+/* TITILLIUM WEB */
+@font-face {
+    font-family: TitilliumWeb-Black;
+    src: url(../assets/fonts/titilium/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: TitilliumWeb-Bold;
+    src: url(../assets/fonts/titilium/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: TitilliumWeb-Regular;
+    src: url(../assets/fonts/titilium/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: TitilliumWeb-Light;
+    src: url(../assets/fonts/titilium/TitilliumWeb-Light.ttf);
+}
+
+/* INTER */
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/* QUICKSAND */
+@font-face {
+    font-family: Quicksand;
+    src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -193,6 +226,12 @@ main .banner__botao-sobre {
     margin-bottom: 81px;
 }
 
+
+
+/* Sessão Jogos */
+
+
+
 main .jogos-recentes {
     display: flex;
     flex-direction: column;
@@ -203,16 +242,228 @@ main .jogos-recentes {
     background-color: #1B1426;
 }
 
-main .entre-no-time {
+
+
+/* Sessão Progamer */
+
+
+
+main .progamer {
     height: 1535px;
     background-color: #F9AA01;
 }
 
-main .entre-no-time__imagem-e-info {
-
+main .progamer .progamer__titulo {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
+main .progamer .progamer__titulo__text {
+    text-transform: uppercase;
+    font-family: TitilliumWeb-Black;
+    font-size: 1.12rem;
+    font-weight: 900;
+    color: #1B1426;
+    letter-spacing: 0.17em;
+    text-align: center;
+    margin-top: 5.25rem;
+    margin-bottom: 2rem;
+}
+
+main .progamer .progamer__titulo__linha {
+    border: #1B1426 solid 2px;
+    width: 231px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Parte killjoy */
+
+main .progamer .progamer__killjoy {
+    display: flex;
+    margin-top: 82px;
+}
+
+main .progamer .progamer__killjoy .progamer__killjoy__image {
+    margin-left: 20px;
+}
+
+main .progamer .progamer__box-info-killjoy {
+    width: 246px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+    z-index: 3;
+
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background:
+        /* fundo */
+        linear-gradient(to right bottom, rgba(110, 49, 236, .2), rgba(45, 7, 109, .83)) padding-box,
+        /* fundo borda */
+        linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, .1)) border-box;
+    backdrop-filter: blur(4px);
+
+    position: absolute;
+    left: 125px;
+    margin-top: 132px;
+    
+}
+
+main .progamer .progamer__box-info-killjoy .progamer__box-info-killjoy__titulo {
+    font-family: TitilliumWeb-Black;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 0 0 6px #C6A5E5;
+}
+
+main .progamer .progamer__box-info-killjoy .progamer__box-info-killjoy__text {
+    width: 12rem;
+
+    font-family: Quicksand;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+/* Parte LoL */
+
+main .progamer .progamer__lol {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 130px;
+}
+
+main .progamer .progamer__lol .progamer__lol__image {
+    margin-right: 20px;
+}
+
+main .progamer .progamer__lol__info-box {
+    width: 246px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background:
+        /* fundo */
+        linear-gradient(to right bottom, rgba(110, 49, 236, .2), rgba(45, 7, 109, .83)) padding-box,
+        /* fundo borda */
+        linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, .1)) border-box;
+    backdrop-filter: blur(4px);
+
+    position: absolute;
+    right: 124px;
+    margin-top: 111px;
+}
+
+main .progamer .progamer__lol__info-box .progamer__lol__info-box__titulo {
+    font-family: TitilliumWeb-Black;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 0 0 6px #C6A5E5;
+    margin-bottom: 11px;
+}
+
+main .progamer .progamer__lol__info-box .progamer__lol__info-box__text1 {
+    font-family: Quicksand;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: justify;
+
+    width: 10.8rem;
+}
+
+main .progamer .progamer__lol__info-box .progamer__lol__info-box__text2 {
+    font-family: Quicksand;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: justify;
+
+    width: 10.8rem;
+}
+
+
+
+/* Sessao noticias */
+
+
+
+main .noticia {
+    height: 3675px;
+    background-image: url(../assets/images/noticia-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+main .noticia .noticia__titulo {
+    text-transform: uppercase;
+    font-family: TitilliumWeb-Black;
+    font-size: 1.12rem;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 2.875rem;
+}
+
+main .noticia .noticia__titulo .noticia__titulo__text {
+    margin-bottom: 1.5rem;
+}
+
+main .noticia .noticia__titulo .noticia__titulo__linha {
+    border: #F9AA01 solid 1px;
+    width: 204px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .noticia .noticia__conjunto-cards {
+    margin-top: 118px;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+main .noticia .noticia__conjunto-cards__card-box {
+    width: 335px;
+    height: 387px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    background: linear-gradient(to right bottom, rgba(37, 26, 52, .3), rgba(5, 1, 12, .8)) padding-box;
+}
+
+main .noticia .noticia__conjunto-cards__card-box .noticia__conjunto-cards__card-box__titulo {
+    font-family: TitilliumWeb-Bold;
+    font-size: 24px;
+    width: 175px;
+    margin-left: 25px;
+}
+
+main .noticia .noticia__conjunto-cards__card-box .noticia__conjunto-cards__card-box__text {
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    width: 283px;
+    margin-left: 25px;
+}
+
+
+
 /* Footer */
+
+
 
 footer {
     padding-top: 60px;
@@ -226,7 +477,7 @@ footer {
 
 footer #sobre {
     width: 100%;
-    height: 304px;
+    height: 210px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -247,8 +498,45 @@ footer #sobre p {
 footer #midias-sociais-footer {
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    justify-content: space-between;
+}
+
+
+
+/* Links uteis */
+
+
+
+footer .titulo-footer__text {
+    font-family: TitilliumWeb-Black;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+footer .titulo-footer__linha {
+    border: #F9AA01 solid 2px;
+    width: 117px;
+
+}
+
+footer .menu-footer {
+    list-style-type: none;
+
+    font-family: TitilliumWeb-Bold;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer .menu-footer__links {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer .footer-top .menu-footer a:before {
+    content: "\2015";
+    margin-right: 10px;
+    color: #F9AA01;
 }
 
 /* Tablet = 768px */
